@@ -79,7 +79,7 @@ const Example = () => {
 
 ## License
 
-GPL-3.0 © [Starnuto di topo](https://github.com/Starnuto di topo)
+GPL-3.0 © [Starnuto di topo](https://github.com/starnutoditopo)
 
 Example & Demo
 -------------------
