@@ -106,7 +106,7 @@ Initial project created with the following command:
 
 (references: https://www.npmjs.com/package/create-react-library )
 
-## code changes
+## Code changes
 
 - Code ported to Typescript
 - Modified some SVG files to exclude Inkscape-related attributes
@@ -122,5 +122,7 @@ Initial project created with the following command:
 
 # Code sanboxes
 
-[Basic usage](https://codesandbox.io/s/8yq47)
-[Real-time update](https://codesandbox.io/s/7wwfs)
+Here are some sandboxes you can inspect:
+
+- [Basic usage](https://codesandbox.io/s/8yq47)
+- [Real-time update](https://codesandbox.io/s/7wwfs)
