@@ -108,12 +108,17 @@ The project is published under GPLv3 License. See LICENSE file for more informat
 
 # Development log
 
-## Create typescript react project 
+## Created typescript react project 
 
 Initial project created with the following command:
 
     docker run -it --rm -v ${PWD}:/app -p 3000:3000 --entrypoint /bin/sh node:16.0.0-alpine3.13 -c "cd /app && npx create-react-library"
 
-### references
+(references: https://www.npmjs.com/package/create-react-library )
 
-- https://www.npmjs.com/package/create-react-library
+## code changes
+
+- Code ported to Typescript
+- Modified some SVG files to exclude Inkscape-related attributes
+- Using SVGR to include SVG as components (see: https://react-svgr.com/ )
+- Added memoization
