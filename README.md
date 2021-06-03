@@ -67,6 +67,14 @@ const Example = () => {
 }
 ```
 
+## TODOs
+
+Here's a list of missing features:
+
+- General:	set custom scales (min/max values, ticks, limits of yellow/green arcs, ...)
+- TurnCoordinator: currently, the slip-skid indicator ball is fixed; a property should be added to edit its position.
+- ...
+
 ## License
 
 GPL-3.0 © [Starnuto di topo](https://github.com/starnutoditopo)
@@ -96,9 +104,9 @@ Further work is done by Sébastien Matton (seb_matton@hotmail.com), whom develop
 
 The project is published under GPLv3 License. See LICENSE file for more informations
 
-# Development log
+## Development log
 
-## Created typescript react project 
+### Created typescript react project 
 
 Initial project created with the following command:
 
@@ -106,21 +114,21 @@ Initial project created with the following command:
 
 (references: https://www.npmjs.com/package/create-react-library )
 
-## Code changes
+### Code changes
 
 - Code ported to Typescript
 - Modified some SVG files to exclude Inkscape-related attributes
 - Using SVGR to include SVG as components (see: https://react-svgr.com/ )
 - Added memoization
 
-## Publishing
+### Publishing
 
 - updated package.json
 - published to NPM
 
 (according to https://levelup.gitconnected.com/publish-react-components-as-an-npm-package-7a671a2fb7f )
 
-# Code sanboxes
+## Code sanboxes
 
 Here are some sandboxes you can inspect:
 
