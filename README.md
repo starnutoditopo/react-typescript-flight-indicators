@@ -119,3 +119,8 @@ Initial project created with the following command:
 - published to NPM
 
 (according to https://levelup.gitconnected.com/publish-react-components-as-an-npm-package-7a671a2fb7f )
+
+# Code sanboxes
+
+[Basic usage](https://codesandbox.io/s/8yq47)
+[Real-time update](https://codesandbox.io/s/7wwfs)
