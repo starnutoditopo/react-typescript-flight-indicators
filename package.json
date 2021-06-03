@@ -4,10 +4,14 @@
   "description": "A React + Typescript porting of react-flight-indicators (https://github.com/skyhop/react-flight-indicators)",
   "author": "Starnuto di topo",
   "license": "GPL-3.0",
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/starnutoditopo/react-typescript-flight-indicators.git"                
+  },
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.tsx",
+  "private": false,
   "engines": {
     "node": ">=10"
   },
@@ -59,6 +63,6 @@
     "typescript": "^3.7.5"
   },
   "files": [
-    "dist"
+    "dist", "README.md"
   ]
 }
