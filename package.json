@@ -4,6 +4,26 @@
   "description": "A React + Typescript porting of react-flight-indicators (https://github.com/skyhop/react-flight-indicators)",
   "author": "Starnuto di topo",
   "license": "GPL-3.0",
+  "keywords": [
+    "memoization",
+    "react",
+    "typescript",
+    "flight",
+    "indicator",
+    "airplane",
+    "component",
+    "control",
+    "svg",
+    "svgr",
+    "heading",
+    "variometer",
+    "turn",
+    "coordinator",
+    "air", 
+    "speed",
+    "altimeter",
+    "attitude"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/starnutoditopo/react-typescript-flight-indicators.git"                

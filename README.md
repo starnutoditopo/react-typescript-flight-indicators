@@ -122,3 +122,10 @@ Initial project created with the following command:
 - Modified some SVG files to exclude Inkscape-related attributes
 - Using SVGR to include SVG as components (see: https://react-svgr.com/ )
 - Added memoization
+
+## Publishing
+
+- updated package.json
+- published to NPM
+
+(according to https://levelup.gitconnected.com/publish-react-components-as-an-npm-package-7a671a2fb7f )
