@@ -86,11 +86,11 @@ The JQuery demo can be found here : [http://sebmatton.github.io/flightindicators
 
 Here are a few examples of currently implemented indicators :
 
-![demo_example](https://raw.githubusercontent.com/sebmatton/jQuery-Flight-Indicators/master/_examples_data/example.png "Indicator examples")
+![demo_example](documentation/example.png "Indicator examples")
 
 The image below shows a part of an 800px indicator. Vector images allows you to keep high quality render with large indicators.
 
-![demo_highres](https://raw.githubusercontent.com/sebmatton/jQuery-Flight-Indicators/master/_examples_data/example_highres.png "High resolution indicator")
+![demo_highres](documentation/example_highres.png "High resolution indicator")
 
 
 Authors and License
@@ -98,7 +98,7 @@ Authors and License
 
 Originally this project has been based on work by igneosaur, which could be found [on Bitbucket](https://bitbucket.org/igneosaur/attitude-indicator).
 
-Further work is done by Sébastien Matton (seb_matton@hotmail.com), whom developed the jQuery plugin as part of his master's for showing realtime flight information from a quadcopter.
+Further work is done by Sébastien Matton (seb_matton@hotmail.com), who developed the jQuery plugin as part of his master's for showing realtime flight information from a quadcopter.
 
 [Corstian Boerman](https://corstianboerman.com) has adapted the project by Sébastien for use with React.
 
