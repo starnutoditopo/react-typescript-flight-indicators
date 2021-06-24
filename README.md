@@ -22,13 +22,13 @@ Currently supported indicators are :
 
 ## Install
 
-Using YARN;
+Using YARN:
 
 ```bash
 yarn add react-typescript-flight-indicators
 ```
 
-Alternatively with NPM;
+Alternatively, with NPM:
 
 ```bash
 npm install --save react-typescript-flight-indicators
@@ -65,6 +65,26 @@ const Example = () => {
 	  	</>
   	)
 }
+```
+
+## Build
+
+Using YARN:
+
+```bash
+yarn build
+```
+
+or:
+
+```bash
+npm run build
+```
+
+**Note:** to publish on NPM:
+
+```bash
+npm publish
 ```
 
 ## TODOs
