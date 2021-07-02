@@ -72,12 +72,14 @@ const Example = () => {
 Using YARN:
 
 ```bash
+yarn install
 yarn build
 ```
 
 or:
 
 ```bash
+npm install
 npm run build
 ```
 

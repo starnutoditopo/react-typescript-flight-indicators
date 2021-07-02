@@ -28,10 +28,16 @@
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
-	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "yarn install",
-	"postCreateCommand": "sudo chmod 777 -R .",
 
 	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
-	"remoteUser": "node"
+	"remoteUser": "node",
+	
+	// See: https://code.visualstudio.com/docs/remote/containers-advanced
+	"mounts": [
+		"source=react-typescript-flight-indicators-node_modules,target=${containerWorkspaceFolder}/node_modules,type=volume",
+		"source=react-typescript-flight-indicators-example-node_modules,target=${containerWorkspaceFolder}/example/node_modules,type=volume"
+	],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	"postCreateCommand": "sudo chown node ${containerWorkspaceFolder}/node_modules && sudo chown node ${containerWorkspaceFolder}/example/node_modules"
 }
