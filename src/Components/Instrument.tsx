@@ -15,7 +15,7 @@ export type InstrumentProperties = {
   size?: string
 }
 
-//const Instrument: React.FC<InstrumentProperties> = (props) => {
+// const Instrument: React.FC<InstrumentProperties> = (props) => {
 const Instrument = React.memo(
   (props: InstrumentProperties & { children?: React.ReactNode }) => {
     const { children, size = '250px', showBox = true } = props

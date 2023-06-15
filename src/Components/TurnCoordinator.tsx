@@ -1,5 +1,6 @@
 import React from 'react'
-import Instrument, { BoxStyle, InstrumentProperties } from './Instrument'
+import Instrument, { BoxStyle } from './Instrument'
+import type { InstrumentProperties } from './Instrument'
 
 import {
   FiCircle,
@@ -11,7 +12,9 @@ type TurnCoordinatorProperties = InstrumentProperties & {
   turn?: number
 }
 
-const TurnCoordinator = React.memo((props: TurnCoordinatorProperties) => {
+const TurnCoordinator = React.memo(function turnCoord(
+  props: TurnCoordinatorProperties
+) {
   return (
     <Instrument {...props}>
       <TurnCoordinatorImage className='box' style={BoxStyle} />
