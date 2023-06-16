@@ -6,15 +6,13 @@ import {
     FiCircle,
     TurnCoordinator as TurnCoordinatorImage,
     FiTcAirplane,
-} from "../img/svgr";
+} from "./generated";
 
 type TurnCoordinatorProperties = InstrumentProperties & {
     turn?: number;
 };
 
-const TurnCoordinator = React.memo(function turnCoord(
-    props: TurnCoordinatorProperties,
-) {
+function TurnCoordinator(props: TurnCoordinatorProperties) {
     return (
         <Instrument {...props}>
             <TurnCoordinatorImage className="box" style={BoxStyle} />
@@ -29,6 +27,6 @@ const TurnCoordinator = React.memo(function turnCoord(
             </div>
         </Instrument>
     );
-});
+}
 
-export default TurnCoordinator;
+export default React.memo(TurnCoordinator);

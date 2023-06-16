@@ -37,18 +37,13 @@
     },
     "packageManager": "npm@9.5.1",
     "scripts": {
-        "codegen": "npx @svgr/cli svg/ --typescript --icon --out-dir src/components/generated",
         "build": "microbundle-crl --no-compress --format modern,cjs",
-        "start": "microbundle-crl watch --no-compress --format modern,cjs",
-        "prettier": "prettier --write .",
-        "prepare": "run-s build",
-        "test": "run-s test:unit test:lint test:build",
-        "test:build": "run-s build",
-        "test:lint": "eslint .",
-        "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
-        "test:watch": "react-scripts test --env=jsdom",
+        "prepare": "npm run build",
         "predeploy": "cd example && yarn install && yarn run build",
-        "deploy": "gh-pages -d example/build"
+        "deploy": "gh-pages -d example/build",
+        "prettier": "prettier --write .",
+        "dev": "microbundle-crl watch --no-compress --format modern,cjs",
+        "codegen": "npx @svgr/cli svg/ --typescript --icon --out-dir src/components/generated"
     },
     "peerDependencies": {
         "react": "^18.0.0"
@@ -64,13 +59,11 @@
         "@typescript-eslint/eslint-plugin": "^5.59.11",
         "@typescript-eslint/parser": "^5.59.11",
         "babel-eslint": "^10.0.3",
-        "cross-env": "^7.0.2",
         "eslint": "^8.42.0",
         "eslint-config-prettier": "^8.8.0",
         "eslint-plugin-react": "^7.32.2",
         "gh-pages": "^2.2.0",
         "microbundle-crl": "^0.13.10",
-        "npm-run-all": "^4.1.5",
         "prettier": "^2.8.8",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",

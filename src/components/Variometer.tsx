@@ -1,7 +1,7 @@
 import React from "react";
 import Instrument, { BoxStyle, InstrumentProperties } from "./Instrument";
 
-import { FiCircle, VerticalMechanics, FiNeedle } from "../img/svgr";
+import { FiCircle, VerticalMechanics, FiNeedle } from "./generated";
 
 const constants = {
     vario_bound: 1.95,
@@ -11,7 +11,7 @@ type VariometerProperties = InstrumentProperties & {
     vario?: number;
 };
 
-const Variometer = React.memo((props: VariometerProperties) => {
+function Variometer(props: VariometerProperties) {
     let vario = (props.vario ?? 0) / 1000;
 
     if (vario > constants.vario_bound) vario = constants.vario_bound;
@@ -33,6 +33,6 @@ const Variometer = React.memo((props: VariometerProperties) => {
             </div>
         </Instrument>
     );
-});
+}
 
-export default Variometer;
+export default React.memo(Variometer);

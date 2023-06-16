@@ -1,6 +1,6 @@
 import React from "react";
 
-import { FiBox } from "../img/svgr";
+import { FiBox } from "./generated";
 
 const boxStyle = {
     width: "100%",
@@ -15,31 +15,29 @@ export type InstrumentProperties = {
     size?: string;
 };
 
-// const Instrument: React.FC<InstrumentProperties> = (props) => {
-const Instrument = React.memo(
-    (props: InstrumentProperties & { children?: React.ReactNode }) => {
-        const { children, size = "250px", showBox = true } = props;
-        const backgroundBox = showBox ? (
-            <FiBox className="background box" style={boxStyle} />
-        ) : null;
+function Instrument(
+    props: InstrumentProperties & { children?: React.ReactNode },
+) {
+    const { children, size = "250px", showBox = true } = props;
+    const backgroundBox = showBox ? (
+        <FiBox className="background box" style={boxStyle} />
+    ) : null;
 
-        return (
-            <div
-                className="instrument heading"
-                style={{
-                    height: size,
-                    width: size,
-                    position: "relative",
-                    display: "inline-block",
-                    overflow: "hidden",
-                }}
-            >
-                {backgroundBox}
-                {children}
-            </div>
-        );
-    },
-);
-
-export default Instrument;
+    return (
+        <div
+            className="instrument heading"
+            style={{
+                height: size,
+                width: size,
+                position: "relative",
+                display: "inline-block",
+                overflow: "hidden",
+            }}
+        >
+            {backgroundBox}
+            {children}
+        </div>
+    );
+}
+export default React.memo(Instrument);
 export const BoxStyle = boxStyle;

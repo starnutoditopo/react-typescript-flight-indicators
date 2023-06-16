@@ -18,9 +18,7 @@ type AttitudeIndicatorProperties = InstrumentProperties & {
     roll?: number;
 };
 
-const AttitudeIndicator = React.memo(function attitudeIndicator(
-    props: AttitudeIndicatorProperties,
-) {
+function AttitudeIndicator(props: AttitudeIndicatorProperties) {
     let pitch = props.pitch ?? 0;
     if (pitch > constants.pitch_bound) {
         pitch = constants.pitch_bound;
@@ -53,6 +51,6 @@ const AttitudeIndicator = React.memo(function attitudeIndicator(
             </div>
         </Instrument>
     );
-});
+}
 
-export default AttitudeIndicator;
+export default React.memo(AttitudeIndicator);

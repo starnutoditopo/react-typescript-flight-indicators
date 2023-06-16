@@ -1,13 +1,13 @@
 import React from "react";
 import Instrument, { BoxStyle, InstrumentProperties } from "./Instrument";
 
-import { FiCircle, HeadingMechanics, HeadingYaw } from "../img/svgr";
+import { FiCircle, HeadingMechanics, HeadingYaw } from "./generated";
 
-type HeadingIndicatorProperties = InstrumentProperties & {
+type HeadingIndicatorProps = InstrumentProperties & {
     heading?: number;
 };
 
-const HeadingIndicator = React.memo((props: HeadingIndicatorProperties) => {
+function HeadingIndicator(props: HeadingIndicatorProps) {
     return (
         <Instrument {...props}>
             <div
@@ -25,6 +25,6 @@ const HeadingIndicator = React.memo((props: HeadingIndicatorProperties) => {
             </div>
         </Instrument>
     );
-});
+}
 
-export default HeadingIndicator;
+export default React.memo(HeadingIndicator);
