@@ -1,40 +1,40 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.177.0/containers/typescript-node
 {
-  "name": "Node.js & TypeScript",
-  "build": {
-    "dockerfile": "Dockerfile",
-    // Update 'VARIANT' to pick a Node version: 12, 14, 16
-    "args": {
-      "VARIANT": "16"
-    }
-  },
+    "name": "Node.js & TypeScript",
+    "build": {
+        "dockerfile": "Dockerfile",
+        // Update 'VARIANT' to pick a Node version: 12, 14, 16
+        "args": {
+            "VARIANT": "16"
+        }
+    },
 
-  // Set the CHOKIDAR_USEPOLLING to true to enable polling for changes
-  // of files and subsequent automatic to recompilation.
-  // See: https://stackoverflow.com/a/44643246/1288109
-  "containerEnv": { "CHOKIDAR_USEPOLLING": "true" },
+    // Set the CHOKIDAR_USEPOLLING to true to enable polling for changes
+    // of files and subsequent automatic to recompilation.
+    // See: https://stackoverflow.com/a/44643246/1288109
+    "containerEnv": { "CHOKIDAR_USEPOLLING": "true" },
 
-  // Set *default* container specific settings.json values on container create.
-  "settings": {
-    "terminal.integrated.shell.linux": "/bin/bash"
-  },
+    // Set *default* container specific settings.json values on container create.
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
 
-  // Add the IDs of extensions you want installed when the container is created.
-  "extensions": ["dbaeumer.vscode-eslint"],
+    // Add the IDs of extensions you want installed when the container is created.
+    "extensions": ["dbaeumer.vscode-eslint"],
 
-  // Use 'forwardPorts' to make a list of ports inside the container available locally.
-  // "forwardPorts": [],
+    // Use 'forwardPorts' to make a list of ports inside the container available locally.
+    // "forwardPorts": [],
 
-  // Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
-  "remoteUser": "node",
+    // Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+    "remoteUser": "node",
 
-  // See: https://code.visualstudio.com/docs/remote/containers-advanced
-  "mounts": [
-    "source=react-typescript-flight-indicators-node_modules,target=${containerWorkspaceFolder}/node_modules,type=volume",
-    "source=react-typescript-flight-indicators-example-node_modules,target=${containerWorkspaceFolder}/example/node_modules,type=volume"
-  ],
+    // See: https://code.visualstudio.com/docs/remote/containers-advanced
+    "mounts": [
+        "source=react-typescript-flight-indicators-node_modules,target=${containerWorkspaceFolder}/node_modules,type=volume",
+        "source=react-typescript-flight-indicators-example-node_modules,target=${containerWorkspaceFolder}/example/node_modules,type=volume"
+    ],
 
-  // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "sudo chown node ${containerWorkspaceFolder}/node_modules && sudo chown node ${containerWorkspaceFolder}/example/node_modules"
+    // Use 'postCreateCommand' to run commands after the container is created.
+    "postCreateCommand": "sudo chown node ${containerWorkspaceFolder}/node_modules && sudo chown node ${containerWorkspaceFolder}/example/node_modules"
 }

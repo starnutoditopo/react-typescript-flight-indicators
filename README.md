@@ -10,12 +10,12 @@ Further, since all the images are vector svg, you can resize the indicators to y
 
 Currently supported indicators are :
 
-- Attitude (artificial horizon)
-- Heading
-- Vertical speed
-- Air speed
-- Altimeter
-- variometer
+-   Attitude (artificial horizon)
+-   Heading
+-   Vertical speed
+-   Air speed
+-   Altimeter
+-   variometer
 
 `react-typescript-flight-indicators` is a porting from [skyhop/react-flight-indicators](https://github.com/skyhop/react-flight-indicators), and refactored for use with React and TypeScript.
 
@@ -36,38 +36,41 @@ npm install --save react-typescript-flight-indicators
 ## Usage
 
 ```tsx
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 import {
-  Airspeed,
-  Altimeter,
-  AttitudeIndicator,
-  HeadingIndicator,
-  TurnCoordinator,
-  Variometer
-} from 'react-typescript-flight-indicators'
+    Airspeed,
+    Altimeter,
+    AttitudeIndicator,
+    HeadingIndicator,
+    TurnCoordinator,
+    Variometer,
+} from "react-typescript-flight-indicators";
 
 const Example = () => {
-  return (
-    <>
-      <HeadingIndicator heading={Math.random() * 360} showBox={false} />
-      <hr />
-      <Airspeed speed={Math.random() * 160} showBox={false} />
-      <hr />
-      <Altimeter altitude={Math.random() * 28000} showBox={false} />
-      <hr />
-      <AttitudeIndicator
-        roll={(Math.random() - 0.5) * 120}
-        pitch={(Math.random() - 0.5) * 40}
-        showBox={false}
-      />
-      <hr />
-      <TurnCoordinator turn={(Math.random() - 0.5) * 120} showBox={false} />
-      <hr />
-      <Variometer vario={(Math.random() - 0.5) * 4000} showBox={false} />
-    </>
-  )
-}
+    return (
+        <>
+            <HeadingIndicator heading={Math.random() * 360} showBox={false} />
+            <hr />
+            <Airspeed speed={Math.random() * 160} showBox={false} />
+            <hr />
+            <Altimeter altitude={Math.random() * 28000} showBox={false} />
+            <hr />
+            <AttitudeIndicator
+                roll={(Math.random() - 0.5) * 120}
+                pitch={(Math.random() - 0.5) * 40}
+                showBox={false}
+            />
+            <hr />
+            <TurnCoordinator
+                turn={(Math.random() - 0.5) * 120}
+                showBox={false}
+            />
+            <hr />
+            <Variometer vario={(Math.random() - 0.5) * 4000} showBox={false} />
+        </>
+    );
+};
 ```
 
 ## Build
@@ -96,9 +99,9 @@ npm publish
 
 Here's a list of missing features:
 
-- General: set custom scales (min/max values, ticks, limits of yellow/green arcs, ...)
-- TurnCoordinator: currently, the slip-skid indicator ball is fixed; a property should be added to edit its position.
-- ...
+-   General: set custom scales (min/max values, ticks, limits of yellow/green arcs, ...)
+-   TurnCoordinator: currently, the slip-skid indicator ball is fixed; a property should be added to edit its position.
+-   ...
 
 ## License
 
@@ -110,11 +113,11 @@ The JQuery demo can be found here : [http://sebmatton.github.io/flightindicators
 
 Here are a few examples of currently implemented indicators :
 
-![demo_example](documentation/example.png 'Indicator examples')
+![demo_example](documentation/example.png "Indicator examples")
 
 The image below shows a part of an 800px indicator. Vector images allows you to keep high quality render with large indicators.
 
-![demo_highres](documentation/example_highres.png 'High resolution indicator')
+![demo_highres](documentation/example_highres.png "High resolution indicator")
 
 ## Authors and License
 
@@ -138,15 +141,15 @@ Initial project created with the following command:
 
 ### Code changes
 
-- Code ported to Typescript
-- Modified some SVG files to exclude Inkscape-related attributes
-- Using SVGR to include SVG as components (see: https://react-svgr.com/ )
-- Added memoization
+-   Code ported to Typescript
+-   Modified some SVG files to exclude Inkscape-related attributes
+-   Using SVGR to include SVG as components (see: https://react-svgr.com/ )
+-   Added memoization
 
 ### Publishing
 
-- updated package.json
-- published to NPM
+-   updated package.json
+-   published to NPM
 
 (according to https://levelup.gitconnected.com/publish-react-components-as-an-npm-package-7a671a2fb7f )
 
