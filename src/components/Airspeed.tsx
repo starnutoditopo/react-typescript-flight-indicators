@@ -1,6 +1,6 @@
 import React from 'react'
 import Instrument, { BoxStyle, InstrumentProperties } from './Instrument'
-import { FiCircle, FiNeedle, SpeedMechanics } from '../img/svgr'
+import { FiCircle, FiNeedle, SpeedMechanics } from './generated'
 
 const constants = {
   airspeed_bound_l: 0,
@@ -11,7 +11,7 @@ type AirspeedProperties = InstrumentProperties & {
   speed?: number
 }
 
-const Airspeed = React.memo((props: AirspeedProperties) => {
+function Airspeed(props: AirspeedProperties) {
   let speed = props.speed ?? 0
 
   if (speed > constants.airspeed_bound_h) speed = constants.airspeed_bound_h
@@ -34,6 +34,7 @@ const Airspeed = React.memo((props: AirspeedProperties) => {
       </div>
     </Instrument>
   )
-})
+}
+// const Airspeed = React.memo()
 
-export default Airspeed
+export default React.memo(Airspeed);

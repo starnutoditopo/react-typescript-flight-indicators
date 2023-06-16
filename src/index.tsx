@@ -9,12 +9,12 @@
 //   return <div className={styles.test}>Example Component: {text}</div>
 // }
 
-import HeadingIndicator from './Components/HeadingIndicator'
-import Variometer from './Components/Variometer'
-import TurnCoordinator from './Components/TurnCoordinator'
-import Airspeed from './Components/Airspeed'
-import Altimeter from './Components/Altimeter'
-import AttitudeIndicator from './Components/AttitudeIndicator'
+import HeadingIndicator from './components/HeadingIndicator'
+import Variometer from './components/Variometer'
+import TurnCoordinator from './components/TurnCoordinator'
+import Airspeed from './components/Airspeed'
+import Altimeter from './components/Altimeter'
+import AttitudeIndicator from './components/AttitudeIndicator'
 
 export {
   HeadingIndicator,

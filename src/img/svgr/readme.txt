@@ -1,1 +1,0 @@
-.tsx files in this folder are generated in prebuild step.

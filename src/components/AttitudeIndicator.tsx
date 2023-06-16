@@ -7,7 +7,7 @@ import {
   HorizonBall,
   HorizonCircle,
   HorizonMechanics
-} from '../img/svgr'
+} from './generated'
 
 const constants = {
   pitch_bound: 30
@@ -18,7 +18,7 @@ type AttitudeIndicatorProperties = InstrumentProperties & {
   roll?: number
 }
 
-const AttitudeIndicator = React.memo((props: AttitudeIndicatorProperties) => {
+const AttitudeIndicator = React.memo(function attitudeIndicator(props: AttitudeIndicatorProperties) {
   let pitch = props.pitch ?? 0
   if (pitch > constants.pitch_bound) {
     pitch = constants.pitch_bound

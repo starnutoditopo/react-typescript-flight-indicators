@@ -6,20 +6,19 @@ import {
   AltitudePressure,
   AltitudeTicks,
   FiNeedleSmall
-} from '../img/svgr'
+} from './generated'
 
 type AltimeterProperties = InstrumentProperties & {
   altitude?: number
   pressure?: number
 }
 
-const Altimeter = React.memo((props: AltimeterProperties) => {
-  let altitude = props.altitude ?? 0
-  let needle = 90 + ((altitude % 1000) * 360) / 1000
-  let needleSmall = (altitude / 10000) * 360
+function Altimeter(props: AltimeterProperties) {
+  const altitude = props.altitude ?? 0
+  const needle = 90 + ((altitude % 1000) * 360) / 1000
+  const needleSmall = (altitude / 10000) * 360
 
-  let pressure = props.pressure ?? 1013.25
-  pressure = 2 * pressure - 1980
+  const pressure = 2 * (props.pressure ?? 1013.25) - 1980
 
   return (
     <Instrument {...props}>
@@ -47,6 +46,6 @@ const Altimeter = React.memo((props: AltimeterProperties) => {
       </div>
     </Instrument>
   )
-})
+}
 
-export default Altimeter
+export default React.memo(Altimeter);

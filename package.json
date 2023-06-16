@@ -37,7 +37,7 @@
   },
   "packageManager": "npm@9.5.1",
   "scripts": {
-    "prebuild": "npx @svgr/cli src/img/ --typescript --icon --out-dir src/img/svgr",
+    "codegen": "npx @svgr/cli svg/ --typescript --icon --out-dir src/components/generated",
     "build": "microbundle-crl --no-compress --format modern,cjs",
     "start": "microbundle-crl watch --no-compress --format modern,cjs",
     "prettier": "prettier --write .",
