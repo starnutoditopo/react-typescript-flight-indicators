@@ -5,6 +5,9 @@ import { FiCircle, HeadingMechanics, HeadingYaw } from "./generated";
 
 type HeadingIndicatorProps = InstrumentProperties & {
     heading?: number;
+    
+    // all the gauges maintain a square proportion (aspect ratio? who knows)
+    size?: string;
 };
 
 function HeadingIndicator(props: HeadingIndicatorProps) {
