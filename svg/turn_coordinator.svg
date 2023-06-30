@@ -248,7 +248,7 @@
        transform="scale(1.0380938,0.9633041)"
        id="text7174"
        xml:space="preserve"
-       style="font-size:15.59156704px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:semi-condensed;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;"><tspan
+       style="font-size:15.59156704px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:semi-condensed;text-align:center;line-height:100%;writing-mode:horizontal-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;"><tspan
          x="420.61884"
          y="497.78818"
          id="tspan7176">NO PITCH</tspan><tspan
@@ -261,7 +261,7 @@
        transform="scale(0.92836478,1.0771628)"
        id="text7190"
        xml:space="preserve"
-       style="font-size:20.08385086px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:semi-condensed;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;"><tspan
+       style="font-size:20.08385086px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:semi-condensed;text-align:center;line-height:100%;writing-mode:horizontal-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;"><tspan
          x="469.34506"
          y="99.67215"
          id="tspan7194">D.C.</tspan><tspan
@@ -274,7 +274,7 @@
        transform="scale(1.0221773,0.97830385)"
        id="text7200"
        xml:space="preserve"
-       style="font-size:17.40028954px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:semi-condensed;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;"><tspan
+       style="font-size:17.40028954px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:semi-condensed;text-align:center;line-height:100%;writing-mode:horizontal-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;"><tspan
          x="426.44009"
          y="362.39902"
          id="tspan7204">TURN COORDINATOR</tspan></text>
@@ -311,7 +311,7 @@
        transform="scale(1.1326938,0.88285112)"
        id="text7237"
        xml:space="preserve"
-       style="font-size:23.17900658px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:semi-condensed;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;"><tspan
+       style="font-size:23.17900658px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:semi-condensed;text-align:center;line-height:100%;writing-mode:horizontal-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;"><tspan
          x="384.96548"
          y="501.12848"
          id="tspan7239">2 MIN.</tspan></text>
@@ -320,7 +320,7 @@
        y="425.35342"
        id="text7241"
        xml:space="preserve"
-       style="font-size:31.2352314px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:semi-condensed;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;"><tspan
+       style="font-size:31.2352314px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:semi-condensed;text-align:center;line-height:100%;writing-mode:horizontal-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;"><tspan
          x="575.61615"
          y="425.35342"
          id="tspan7243">R</tspan></text>
@@ -329,7 +329,7 @@
        y="425.35342"
        id="text7245"
        xml:space="preserve"
-       style="font-size:31.20715141px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:semi-condensed;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;"><tspan
+       style="font-size:31.20715141px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:semi-condensed;text-align:center;line-height:100%;writing-mode:horizontal-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:DejaVu Sans;"><tspan
          x="295.46774"
          y="425.35342"
          id="tspan7247">L</tspan></text>
