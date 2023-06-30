@@ -157,5 +157,5 @@ Initial project created with the following command:
 
 Here are some sandboxes you can inspect:
 
-- [Basic usage](https://codesandbox.io/s/8yq47)
-- [Real-time update](https://codesandbox.io/s/7wwfs)
+-   [Basic usage](https://codesandbox.io/s/8yq47)
+-   [Real-time update](https://codesandbox.io/s/7wwfs)
