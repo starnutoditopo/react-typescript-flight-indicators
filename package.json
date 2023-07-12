@@ -1,6 +1,6 @@
 {
     "name": "react-typescript-flight-indicators",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "A React + TypeScript porting of react-flight-indicators (https://github.com/skyhop/react-flight-indicators)",
     "author": "Starnuto di topo",
     "license": "GPL-3.0",
